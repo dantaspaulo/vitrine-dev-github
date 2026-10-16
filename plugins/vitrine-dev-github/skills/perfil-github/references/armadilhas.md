@@ -33,9 +33,9 @@ Cada item diz o sintoma, a causa e o que fazer.
 
 ## Serviços de imagem
 - **skillicons.dev** não tem todos os nomes. Sem ícone: `n8n`, `qdrant`, `openai`, `claude`,
-  `ollama` (em 2026). Teste com `curl -s -o /dev/null -w '%{size_download}' 'https://skillicons.dev/icons?i=NOME'`:
-  resposta muito pequena (~256 bytes) é erro. Para esses, badge do shields.io com `logo=` do
-  simpleicons.
+  `ollama` (em 2026). Para testar um nome, abra `https://skillicons.dev/icons?i=NOME`: se a imagem
+  vier vazia (resposta de ~256 bytes), o ícone não existe. Para esses, badge do shields.io com
+  `logo=` do simpleicons.
 - **shields.io**: hífen e sublinhado no texto do badge se escrevem `--` e `__`. O script já faz.
   Alguns logos saíram do simpleicons (LinkedIn, por exemplo): o badge aparece sem ícone, o que é
   aceitável.
@@ -47,5 +47,5 @@ Cada item diz o sintoma, a causa e o que fazer.
   lugar, confira a fonte de novo; erro replicado em dois lugares vira dois erros.
 - **Somar casos diferentes num número só** ("agentes entregues com 600 testes", quando os 600 são de
   um cliente) é o tipo de exagero que cai numa pergunta. Diga de qual case é.
-- **Link quebrado** para página de produto ou cliente: confira com
-  `curl -s -o /dev/null -w '%{http_code}' -L URL` antes de publicar.
+- **Link quebrado** para página de produto ou cliente: abra cada link e confira que ele responde
+  (código 200, depois dos redirecionamentos) antes de publicar.

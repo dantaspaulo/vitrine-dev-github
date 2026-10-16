@@ -1,7 +1,7 @@
 {
   "name": "vitrine-dev-github",
   "displayName": "Vitrine Dev para GitHub",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "O Claude monta o seu perfil do GitHub com cara de portfólio: cases em cartões SVG animados, números com fonte e data, versão de celular, prévia antes de publicar e uma trava que recusa nome de cliente não autorizado.",
   "author": {
     "name": "Paulo Sérgio Dantas",
@@ -10,5 +10,12 @@
   "homepage": "https://github.com/dantaspaulo/vitrine-dev-github",
   "repository": "https://github.com/dantaspaulo/vitrine-dev-github",
   "license": "MIT",
-  "keywords": ["github", "perfil", "portfolio", "readme", "svg", "pt-br"]
+  "keywords": [
+    "github",
+    "perfil",
+    "portfolio",
+    "readme",
+    "svg",
+    "pt-br"
+  ]
 }

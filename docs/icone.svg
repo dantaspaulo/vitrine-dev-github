@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="fundo" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#3B3021"/>
+      <stop offset="1" stop-color="#14110C"/>
+    </radialGradient>
+    <linearGradient id="ouro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E5C4"/>
+      <stop offset="0.5" stop-color="#D6BD8F"/>
+      <stop offset="1" stop-color="#A88649"/>
+    </linearGradient>
+    <linearGradient id="ouroEscuro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9C7E4B"/>
+      <stop offset="1" stop-color="#6E5733"/>
+    </linearGradient>
+    <clipPath id="toldo">
+      <path d="M176 220 H848 V340 a56 56 0 0 1 -112 0 a56 56 0 0 1 -112 0 a56 56 0 0 1 -112 0 a56 56 0 0 1 -112 0 a56 56 0 0 1 -112 0 a56 56 0 0 1 -112 0 Z"/>
+    </clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#fundo)"/>
+  <rect x="236" y="330" width="552" height="494" rx="36" fill="#1E1A14" stroke="url(#ouro)" stroke-width="22"/>
+  <g clip-path="url(#toldo)">
+    <rect x="176" y="220" width="112" height="180" fill="url(#ouro)"/>
+    <rect x="288" y="220" width="112" height="180" fill="url(#ouroEscuro)"/>
+    <rect x="400" y="220" width="112" height="180" fill="url(#ouro)"/>
+    <rect x="512" y="220" width="112" height="180" fill="url(#ouroEscuro)"/>
+    <rect x="624" y="220" width="112" height="180" fill="url(#ouro)"/>
+    <rect x="736" y="220" width="112" height="180" fill="url(#ouroEscuro)"/>
+  </g>
+  <rect x="158" y="196" width="708" height="40" rx="20" fill="url(#ouro)"/>
+  <rect x="306" y="596" width="112" height="170" rx="22" fill="url(#ouroEscuro)"/>
+  <rect x="456" y="526" width="112" height="240" rx="22" fill="url(#ouro)" opacity="0.85"/>
+  <rect x="606" y="446" width="112" height="320" rx="22" fill="url(#ouro)"/>
+  <path d="M716 398 L730 432 L764 446 L730 460 L716 494 L702 460 L668 446 L702 432 Z" fill="#FBF3DF" stroke="#1E1A14" stroke-width="12" stroke-linejoin="round" paint-order="stroke"/>
+</svg>
