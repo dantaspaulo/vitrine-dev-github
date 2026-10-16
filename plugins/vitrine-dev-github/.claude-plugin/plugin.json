@@ -10,6 +10,7 @@
   "homepage": "https://github.com/dantaspaulo/vitrine-dev-github",
   "repository": "https://github.com/dantaspaulo/vitrine-dev-github",
   "license": "MIT",
+  "privacyPolicyUrl": "https://github.com/dantaspaulo/vitrine-dev-github/blob/main/plugins/vitrine-dev-github/PRIVACIDADE.md",
   "keywords": [
     "github",
     "perfil",

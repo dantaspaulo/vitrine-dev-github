@@ -71,6 +71,8 @@ script continua montando e conferindo os arquivos, e o diagnóstico e a publica�
 Se você indicar um site ou um LinkedIn, o Claude lê essas páginas com as ferramentas dele, como em
 qualquer conversa.
 
+Detalhes na [política de privacidade](https://github.com/dantaspaulo/vitrine-dev-github/blob/main/plugins/vitrine-dev-github/PRIVACIDADE.md).
+
 ## Licença
 
 MIT. Feito por [Paulo Sérgio Dantas](https://github.com/dantaspaulo). Código e exemplos em
@@ -84,4 +86,4 @@ every block, a side-by-side preview before anything is published, and a guard th
 publish any client name on your do-not-cite list. The skill speaks Brazilian Portuguese. It runs
 only a readable standard-library Python script plus your own `gh` and `git`, reads public profile
 data from GitHub, sends the generated README to GitHub's Markdown API for the preview, and pushes
-only when you say so.
+only when you say so. Privacy policy: https://github.com/dantaspaulo/vitrine-dev-github/blob/main/plugins/vitrine-dev-github/PRIVACIDADE.md
