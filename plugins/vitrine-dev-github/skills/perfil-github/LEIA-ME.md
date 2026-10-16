@@ -10,11 +10,17 @@ publicar se o nome escapar em algum arquivo. Nada vai ao ar sem você ver a pré
 
 ## Instalar
 
-**Claude Code:** copie esta pasta para `~/.claude/skills/perfil-github/` (ou para
+**Como plugin, no Claude Code:**
+
+```
+/plugin marketplace add dantaspaulo/vitrine-dev-github
+/plugin install vitrine-dev-github@dantaspaulo
+```
+
+**Só a skill, no Claude Code:** copie esta pasta para `~/.claude/skills/perfil-github/` (ou para
 `.claude/skills/` dentro de um projeto). Abra o Claude Code de novo.
 
-**Claude.ai / app:** em Configurações → Capacidades → Skills, envie o arquivo `.skill` (ou o `.zip`
-desta pasta).
+**Claude.ai / app:** em Personalizar → Skills, envie o `.zip` desta pasta.
 
 ## Usar
 

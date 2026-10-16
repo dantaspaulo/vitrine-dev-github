@@ -1,20 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E2CDA4,100:B8995F&height=210&section=header&text=perfil-github&fontColor=14110C&fontSize=50&fontAlignY=36&desc=skill%20para%20o%20Claude%20montar%20seu%20GitHub%20com%20cara%20de%20portf%C3%B3lio&descAlignY=58&descColor=14110C&descSize=18&animation=fadeIn" width="100%" alt="perfil-github: skill para o Claude montar seu GitHub com cara de portfólio" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E2CDA4,100:B8995F&height=210&section=header&text=Vitrine%20Dev&fontColor=14110C&fontSize=50&fontAlignY=36&desc=plugin%20para%20o%20Claude%20montar%20seu%20GitHub%20com%20cara%20de%20portf%C3%B3lio&descAlignY=58&descColor=14110C&descSize=18&animation=fadeIn" width="100%" alt="Vitrine Dev: plugin para o Claude montar seu GitHub com cara de portfólio" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1300&color=B08D57&center=true&vCenter=true&width=720&lines=Seu+GitHub+com+cara+de+portf%C3%B3lio;Cases+animados%2C+sem+expor+cliente;O+Claude+pergunta+s%C3%B3+o+que+falta;Pr%C3%A9via+antes+de+publicar" alt="" />
 
 <br/>
 
-<a href="https://github.com/dantaspaulo/skill-perfil-github/releases/latest/download/perfil-github.zip"><img src="https://img.shields.io/badge/Baixar%20a%20skill%20(.zip)-D6BD8F?style=for-the-badge&logo=github&logoColor=14110C" alt="Baixar a skill (.zip)" /></a>
-<a href="https://github.com/dantaspaulo/skill-perfil-github/releases/latest/download/perfil-github.skill"><img src="https://img.shields.io/badge/Baixar%20.skill-1B1916?style=for-the-badge&logo=anthropic&logoColor=D6BD8F" alt="Baixar .skill" /></a>
+<a href="https://github.com/dantaspaulo/vitrine-dev-github/releases/latest/download/perfil-github.zip"><img src="https://img.shields.io/badge/Baixar%20a%20skill%20(.zip)-D6BD8F?style=for-the-badge&logo=github&logoColor=14110C" alt="Baixar a skill (.zip)" /></a>
+<a href="https://github.com/dantaspaulo/vitrine-dev-github/releases/latest/download/perfil-github.skill"><img src="https://img.shields.io/badge/Baixar%20.skill-1B1916?style=for-the-badge&logo=anthropic&logoColor=D6BD8F" alt="Baixar .skill" /></a>
 <a href="https://github.com/dantaspaulo"><img src="https://img.shields.io/badge/Ver%20um%20perfil%20pronto-1B1916?style=for-the-badge&logo=googlechrome&logoColor=D6BD8F" alt="Ver um perfil pronto" /></a>
 <img src="https://img.shields.io/badge/licen%C3%A7a-MIT-1B1916?style=for-the-badge" alt="Licença MIT" />
 
 <br/><br/>
 
 **Você fez coisa boa, mas o seu GitHub não mostra.**<br/>
-Esta skill faz o Claude transformar o seu perfil numa vitrine que se lê em 20 segundos:<br/>quem você é, o que você entrega e a prova disso.
+Este plugin faz o Claude transformar o seu perfil numa vitrine que se lê em 20 segundos:<br/>quem você é, o que você entrega e a prova disso.
 
 <br/>
 
@@ -91,21 +91,31 @@ Esta skill faz o Claude transformar o seu perfil numa vitrine que se lê em 20 s
 
 ## 📥 Instalar
 
-**Claude Code** (macOS ou Linux):
+**Como plugin, no Claude Code** (recomendado: atualiza sozinho):
+
+```
+/plugin install vitrine-dev-github --marketplace dantaspaulo/vitrine-dev-github
+```
+
+Em versões do Claude Code anteriores à 2.1.275, em dois passos: `/plugin marketplace add dantaspaulo/vitrine-dev-github` e depois `/plugin install vitrine-dev-github@dantaspaulo`.
+
+Depois é só pedir, ou chamar direto com `/vitrine-dev-github:perfil-github`.
+
+**Só a skill, no Claude Code** (macOS ou Linux):
 
 ```bash
-curl -L -o /tmp/perfil-github.zip https://github.com/dantaspaulo/skill-perfil-github/releases/latest/download/perfil-github.zip
+curl -L -o /tmp/perfil-github.zip https://github.com/dantaspaulo/vitrine-dev-github/releases/latest/download/perfil-github.zip
 unzip -o /tmp/perfil-github.zip -d ~/.claude/skills/
 ```
 
-**Claude Code** (Windows, PowerShell):
+**Só a skill, no Claude Code** (Windows, PowerShell):
 
 ```powershell
-Invoke-WebRequest -Uri https://github.com/dantaspaulo/skill-perfil-github/releases/latest/download/perfil-github.zip -OutFile "$env:TEMP\perfil-github.zip"
+Invoke-WebRequest -Uri https://github.com/dantaspaulo/vitrine-dev-github/releases/latest/download/perfil-github.zip -OutFile "$env:TEMP\perfil-github.zip"
 Expand-Archive -Force "$env:TEMP\perfil-github.zip" "$HOME\.claude\skills\"
 ```
 
-**Claude.ai ou app do Claude:** baixe o [`.zip`](https://github.com/dantaspaulo/skill-perfil-github/releases/latest/download/perfil-github.zip) e envie em **Configurações → Capacidades → Skills**.
+**Claude.ai ou app do Claude:** baixe o [`.zip`](https://github.com/dantaspaulo/vitrine-dev-github/releases/latest/download/perfil-github.zip) e envie em **Personalizar → Skills**.
 
 Depois, abra uma conversa nova.
 
@@ -130,18 +140,24 @@ Na máquina: `python3` e `git`. O [GitHub CLI](https://cli.github.com) (`gh`) lo
 ## 📦 O que vem dentro
 
 ```
-perfil-github/
-├── SKILL.md                    o roteiro que o Claude segue
-├── LEIA-ME.md                  instalar e usar
-├── scripts/perfil.py           diagnóstico, montar, conferir e prévia (só Python padrão)
-└── references/
-    ├── entrevista.md           o que perguntar, em que ordem e como
-    ├── o-que-citar.md          privacidade, números com fonte, o verbo certo para o seu papel
-    ├── estrutura.md            o design: seções, limites de cada campo, temas
-    ├── github.md               fixados, bio, contagem de contribuições
-    ├── armadilhas.md           o que já deu errado e como evitar
-    └── perfil.exemplo.json     um perfil completo de exemplo
+plugins/vitrine-dev-github/              o plugin
+├── .claude-plugin/plugin.json           nome, versão e descrição
+├── README.md                            o que o plugin faz, roda e envia
+└── skills/perfil-github/
+    ├── SKILL.md                         o roteiro que o Claude segue
+    ├── LEIA-ME.md                       instalar e usar
+    ├── scripts/perfil.py                diagnóstico, montar, conferir e prévia (só Python padrão)
+    └── references/
+        ├── entrevista.md                o que perguntar, em que ordem e como
+        ├── o-que-citar.md               privacidade, números com fonte, o verbo certo para o seu papel
+        ├── estrutura.md                 o design: seções, limites de cada campo, temas
+        ├── github.md                    fixados, bio, contagem de contribuições
+        ├── armadilhas.md                o que já deu errado e como evitar
+        └── perfil.exemplo.json          um perfil completo de exemplo
+.claude-plugin/marketplace.json          deixa instalar com /plugin marketplace add
 ```
+
+O que o plugin roda, o que envia e para onde está descrito no [README do plugin](plugins/vitrine-dev-github/README.md#o-que-o-plugin-roda-envia-e-busca).
 
 As imagens deste README saem do mesmo gerador: `python3 docs/gerar_docs.py`.
 

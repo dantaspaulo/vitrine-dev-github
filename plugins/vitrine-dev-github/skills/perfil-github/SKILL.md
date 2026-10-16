@@ -29,8 +29,11 @@ skill é entender a pessoa, escrever um bom `perfil.json` e conferir o resultado
 Pergunte só o que não dá para descobrir. Comece pelo que é público:
 
 ```bash
-python3 <skill>/scripts/perfil.py diagnostico --login USUARIO
+python3 ${CLAUDE_SKILL_DIR}/scripts/perfil.py diagnostico --login USUARIO
 ```
+
+`${CLAUDE_SKILL_DIR}` é a pasta desta skill. No chat do claude.ai, onde a pasta é copiada para o
+ambiente de código, o mesmo script fica em `scripts/perfil.py` a partir dela.
 
 Ele mostra campos do perfil, se o repositório de perfil existe, o que está fixado, repositórios
 públicos (candidatos a fixar), repositórios de outros em que a pessoa contribuiu e quais
@@ -67,7 +70,7 @@ de nomes que não podem ser públicos.
 
 ```bash
 gh repo clone USUARIO/USUARIO   # ou git clone; se não existir, crie (passo 6)
-python3 <skill>/scripts/perfil.py montar --config ~/perfil-github-trabalho/perfil.json --repo ./USUARIO
+python3 ${CLAUDE_SKILL_DIR}/scripts/perfil.py montar --config ~/perfil-github-trabalho/perfil.json --repo ./USUARIO
 ```
 
 O `montar` gera README e SVGs e já roda a conferência, que **recusa** (sai com erro):
@@ -82,7 +85,7 @@ exemplo, não trava, mas precisa de uma decisão.
 ### 5. Prévia antes de publicar
 
 ```bash
-python3 <skill>/scripts/perfil.py previa --config ~/perfil-github-trabalho/perfil.json --repo ./USUARIO
+python3 ${CLAUDE_SKILL_DIR}/scripts/perfil.py previa --config ~/perfil-github-trabalho/perfil.json --repo ./USUARIO
 ```
 
 Gera `previa/index.html` na pasta do `perfil.json` (fora do repositório; mude com `--saida`), com o

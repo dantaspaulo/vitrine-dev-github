@@ -11,12 +11,12 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "docs" / "assets"
-spec = importlib.util.spec_from_file_location("perfil", RAIZ / "perfil-github" / "scripts" / "perfil.py")
+spec = importlib.util.spec_from_file_location("perfil", RAIZ / "plugins" / "vitrine-dev-github" / "skills" / "perfil-github" / "scripts" / "perfil.py")
 perfil = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(perfil)
 
 DOCS = {
-    "login": "skill-perfil-github",
+    "login": "vitrine-dev-github",
     "nome": "perfil-github",
     "tema": "champagne",
     "numeros": [
@@ -51,7 +51,7 @@ def gerar_blocos():
 
 def galeria_de_temas():
     """Um cartão de case por tema, todos no mesmo SVG (classes e degradês com escopo por tema)."""
-    exemplo = json.loads((RAIZ / "perfil-github" / "references" / "perfil.exemplo.json").read_text(encoding="utf-8"))
+    exemplo = json.loads((RAIZ / "plugins" / "vitrine-dev-github" / "skills" / "perfil-github" / "references" / "perfil.exemplo.json").read_text(encoding="utf-8"))
     case = exemplo["cases"][0]
     pecas, estilos, defs = [], [], []
     for i, nome in enumerate(perfil.TEMAS):

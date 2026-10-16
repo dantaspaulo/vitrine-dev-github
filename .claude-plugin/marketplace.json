@@ -1,0 +1,14 @@
+{
+  "name": "dantaspaulo",
+  "description": "Plugins do Paulo Sérgio Dantas para o Claude.",
+  "owner": {
+    "name": "Paulo Sérgio Dantas"
+  },
+  "plugins": [
+    {
+      "name": "vitrine-dev-github",
+      "source": "./plugins/vitrine-dev-github",
+      "description": "O Claude monta o seu perfil do GitHub com cara de portfólio: cases em cartões SVG animados, números com fonte e data, versão de celular, prévia antes de publicar e uma trava que recusa nome de cliente não autorizado."
+    }
+  ]
+}
